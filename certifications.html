@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Anu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background: #ffffff;
+            color: #1a1a1a;
+        }
+
+        /* HEADER */
+        header{
+            width: 100%;
+            padding: 20px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo{
+            font-size: 26px;
+            font-weight: 700;
+            color: #005eff;
+        }
+        .logo span{ color: #000; }
+
+        nav a{
+            margin-left: 25px;
+            font-size: 17px;
+            text-decoration: none;
+            color: #333;
+            transition: 0.3s;
+        }
+        nav a:hover, nav .active{
+            color: #005eff;
+        }
+
+        /* PAGE CONTENT */
+        .container{
+            margin-top: 150px;
+            padding: 30px 80px;
+        }
+
+        .title{
+            font-size: 40px;
+            font-weight: 600;
+            color: #005eff;
+            margin-bottom: 10px;
+            animation: fadeDown 1s ease forwards;
+            opacity: 0;
+        }
+
+        .subtitle{
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* CERTIFICATION GRID */
+        .cert-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .cert-card{
+            background: #ffffff;
+            padding: 25px;
+            border-left: 5px solid #005eff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            transition: 0.3s ease;
+            animation: fadeIn 1.2s ease forwards;
+            opacity: 0;
+        }
+
+        .cert-card:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+        }
+
+        .cert-icon{
+            font-size: 40px;
+            color: #005eff;
+            margin-bottom: 10px;
+        }
+
+        .cert-card h3{
+            font-size: 22px;
+            margin-bottom: 5px;
+            color: #005eff;
+        }
+
+        .cert-card p{
+            font-size: 15px;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">MAHALAKSHMI KATHIRAVAN<span></span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CERTIFICATION SECTION -->
+    <div class="container">
+        <h2 class="title">My Certifications</h2>
+        <p class="subtitle">Professional courses and achievements that reflect my skills and growth.</p>
+
+        <div class="cert-grid">
+
+            <!-- SAMPLE CERTIFICATION 1 -->
+            <div class="cert-card">
+                <i class="ri-award-line cert-icon"></i>
+                <h3>Introduction to Robotics</h3>
+                <p><strong>Issued by:</strong> Coursera | University of Pennsylvania</p>
+                <p><strong>Description:</strong> Learned robot kinematics, motion planning, sensors, and basic automation systems.</p>
+            </div>
+
+            <!-- SAMPLE CERTIFICATION 2 -->
+            <div class="cert-card">
+                <i class="ri-award-line cert-icon"></i>
+                <h3>Python for Everybody</h3>
+                <p><strong>Issued by:</strong> Coursera | University of Michigan</p>
+                <p><strong>Description:</strong> Gained strong fundamentals in Python, automation scripting, and data processing.</p>
+            </div>
+
+            <!-- SAMPLE CERTIFICATION 3 -->
+            <div class="cert-card">
+                <i class="ri-award-line cert-icon"></i>
+                <h3>Web Development Bootcamp</h3>
+                <p><strong>Issued by:</strong> Udemy</p>
+                <p><strong>Description:</strong> Learned HTML, CSS, JavaScript, UI design principles, and responsive website building.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
